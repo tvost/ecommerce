@@ -1,0 +1,198 @@
+/* Adicione estes estilos ao seu arquivo de estilo CSS */
+
+/* ... (seus estilos existentes) ... */
+
+.top-bar {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.top-bar-box {
+  position: absolute;
+  top: 80px; /* Ajuste conforme necessário */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+  z-index: 999;
+  box-sizing: border-box;
+}
+
+/* Estilos específicos para o formulário de login e registro */
+.login-register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-register-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+  margin: 20px auto;
+  box-sizing: border-box;
+}
+
+.login-card,
+.register-card {
+  /* Adicione estilos específicos para o formulário de login e registro, se necessário */
+}
+
+.login-register-card label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.login-register-card input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.login-register-card button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login-register-card button:hover {
+  background-color: #45a049;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.register-card {
+  /* Adicione estilos específicos para a caixa de registro, se necessário */
+}
+
+/* ... (seus estilos existentes) ... */
+
+
+.product {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  width: 200px; /* Largura fixa de cada produto */
+  box-sizing: border-box;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+/* Adicione estes estilos ao seu arquivo de estilo CSS */
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #f7f7f7; /* Cor de fundo contrastante */
+  padding: 20px; /* Espaçamento interno */
+}
+
+.product {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  background-color: #fff; /* Cor de fundo para os produtos */
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product:hover img {
+  transform: scale(1.2);
+}
+
+.product .additional-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.product:hover .additional-images {
+  opacity: 1;
+}
+
+.product .additional-images img {
+  max-width: 50px;
+  height: auto;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product .additional-images img:hover {
+  transform: scale(1.2);
+}
+
